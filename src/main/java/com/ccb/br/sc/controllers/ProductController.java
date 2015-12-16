@@ -5,7 +5,7 @@ import java.util.List;
 import javax.annotation.PostConstruct;
 import javax.enterprise.inject.Model;
 import javax.inject.Inject;
-import org.apache.deltaspike.jpa.api.transaction.Transactional;
+import javax.transaction.Transactional;
 
 import com.ccb.br.sc.daos.ProductDao;	
 import com.ccb.br.sc.daos.CategoryDao;	
