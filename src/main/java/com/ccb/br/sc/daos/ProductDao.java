@@ -3,6 +3,7 @@ package com.ccb.br.sc.daos;
 import java.util.List;
 
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import javax.inject.Inject;
 
 import com.ccb.br.sc.models.Product;
@@ -10,7 +11,7 @@ import com.ccb.br.sc.models.Product;
 public class ProductDao
 {
 
-   @Inject
+   @PersistenceContext(unitName = "default")
    private EntityManager manager;
 
    public List<Product> all()
